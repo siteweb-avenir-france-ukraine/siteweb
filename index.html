@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="alternate" href="http://avenir-france-ukraine.com/index.html" hreflang="fr" />
+    <link rel="alternate" href="http://avenir-france-ukraine.com/index_ua.html" hreflang="lt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Association de soutiens aux peuples Ukrainiens">
+    <meta name='Keywords' content='Association France Ukraine Nantes  Vertou Saint-Sébastien-sur-Loire Collecte Don'>
+    <meta name="author" content="Association Avenir France Ukraine">
+    <title>Association Avenir France Ukraine</title>
+    <style>
+        body {
+            background: white;
+            color: #195a9f;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: #195a9f;
+        }
+
+        .header,
+        .footer {
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flags {
+            max-width: 225px;
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 20px 20px 20px;
+            --ggs: 3;
+            justify-content: space-around;
+        }
+
+        .row {
+            border-bottom: 2px solid transparent;
+            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+            font-size: 120%;
+            padding: 20px 20px 20px 20px;
+            position: relative;
+
+        }
+
+        .start {
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+
+        }
+
+        h2 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+            text-align: center;
+        }
+
+        /* Custom page footer */
+        .footer {
+            padding-top: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #150303;
+        }
+
+        /* Customize container */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 930px;
+            }
+        }
+
+        .c-flag__fra {
+            width: 110px;
+            height: 66px;
+            background-image: linear-gradient(90deg, #002395 0, #002395 33%, #FFF 33%, #FFF 67%, #ED2939 67%, #ED2939 100%);
+        }
+
+        .c-flag__ua {
+            width: 110px;
+            height: 66px;
+            background: linear-gradient(#105bbc 50%, #ffd600 0);
+        }
+
+        .c-flag {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .lang {
+            right: 20px;
+            position: absolute;
+        }
+
+        .logo {
+            width: 50%;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fa-envelope-o:before {
+            content: "\f003";
+        }
+
+        .gg-mail,
+        .gg-mail::after {
+            display: block;
+            box-sizing: border-box;
+            height: 14px;
+            border: 2px solid
+        }
+
+        .gg-mail {
+            overflow: hidden;
+            transform: scale(var(--ggs, 1));
+            position: relative;
+            width: 18px;
+            border-radius: 2px
+        }
+
+        .gg-mail::after {
+            content: "";
+            position: absolute;
+            border-radius: 3px;
+            width: 14px;
+            transform: rotate(-45deg);
+            bottom: 3px;
+            left: 0
+        }
+
+        .gg-facebook {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 20px;
+            height: 20px
+        }
+
+        .gg-facebook::after,
+        .gg-facebook::before {
+            content: "";
+            display: block;
+            position: absolute;
+            box-sizing: border-box
+        }
+
+        .gg-facebook::before {
+            width: 8px;
+            height: 20px;
+            border-left: 4px solid;
+            border-top: 4px solid;
+            border-top-left-radius: 5px;
+            left: 6px
+        }
+
+        .gg-facebook::after {
+            width: 10px;
+            height: 4px;
+            background: currentColor;
+            top: 7px;
+            left: 4px;
+            transform: skew(-5deg)
+        }
+
+        .gg-instagram {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            border: 2px solid transparent;
+            box-shadow: 0 0 0 2px;
+            border-radius: 4px;
+            width: 20px;
+            height: 20px
+        }
+
+        .gg-instagram::after,
+        .gg-instagram::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute
+        }
+
+        .gg-instagram::after {
+            border: 2px solid;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            top: 3px
+        }
+
+        .gg-instagram::before {
+            border-radius: 3px;
+            width: 2px;
+            height: 2px;
+            background: currentColor;
+            right: 1px;
+            top: 1px
+        }
+
+        .gg-euro {
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 14px;
+            height: 14px;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 100px;
+            border-right-color: transparent
+        }
+
+        .gg-euro::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            width: 9px;
+            height: 5px;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            transform: skewX(-20deg);
+            left: -4px;
+            top: 3px
+        }
+
+        .centered {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottomer {
+            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        }
+
+        @keyframes tonext {
+            75% {
+                left: 0;
+            }
+
+            95% {
+                left: 100%;
+            }
+
+            98% {
+                left: 100%;
+            }
+
+            99% {
+                left: 0;
+            }
+        }
+
+        @keyframes tostart {
+            75% {
+                left: 0;
+            }
+
+            95% {
+                left: -700%;
+            }
+
+            98% {
+                left: -700%;
+            }
+
+            99% {
+                left: 0;
+            }
+        }
+
+        @keyframes snap {
+            96% {
+                scroll-snap-align: center;
+            }
+
+            97% {
+                scroll-snap-align: none;
+            }
+
+            99% {
+                scroll-snap-align: none;
+            }
+
+            100% {
+                scroll-snap-align: center;
+            }
+        }
+
+
+
+        * {
+            box-sizing: border-box;
+            scrollbar-color: transparent transparent;
+            /* thumb and track color */
+            scrollbar-width: 0px;
+        }
+
+        *::-webkit-scrollbar {
+            width: 0;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background: transparent;
+            border: none;
+        }
+
+        * {
+            -ms-overflow-style: none;
+        }
+
+        /*ol,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }*/
+
+        .carousel {
+            position: relative;
+            padding-top: 75%;
+            filter: transparent;
+            perspective: 100px;
+        }
+
+        .carousel__viewport {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            overflow-x: scroll;
+            counter-reset: item;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+        }
+
+        .carousel__slide {
+            position: relative;
+            flex: 0 0 100%;
+            width: 100%;
+            background-color: transparent;
+            counter-increment: item;
+        }
+
+        /*.carousel__slide:before {
+            content: counter(item);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -40%, 70px);
+            color: #fff;
+            font-size: 2em;
+        }*/
+
+        .carousel__snapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            scroll-snap-align: center;
+        }
+
+        @media (hover: hover) {
+            .carousel__snapper {
+                animation-name: tonext, snap;
+                animation-timing-function: ease;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
+            .carousel__slide:last-child .carousel__snapper {
+                animation-name: tostart, snap;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .carousel__snapper {
+                animation-name: none;
+            }
+        }
+
+        .carousel:hover .carousel__snapper,
+        .carousel:focus-within .carousel__snapper {
+            animation-name: none;
+        }
+
+        .carousel__navigation {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        .carousel__navigation-list,
+        .carousel__navigation-item {
+            display: inline-block;
+        }
+
+
+
+        .carousel::before,
+        .carousel::after,
+        .carousel__prev,
+        .carousel__next {
+            position: absolute;
+            top: 0;
+            margin-top: 37.5%;
+            width: 2rem;
+            height: 2rem;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            font-size: 0;
+            outline: 0;
+        }
+
+        .carousel::before,
+        .carousel__prev {
+            left: 0rem;
+        }
+
+        .carousel::after,
+        .carousel__next {
+            right: 0rem;
+        }
+
+        .carousel::before,
+        .carousel::after {
+            content: '';
+            z-index: 1;
+            background-color: #f8d53653;
+            background-size: 0.75rem 0.75rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #f8d53653;
+            font-size: 2.5rem;
+            line-height: 4rem;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .carousel::before {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+            z-index: 25;
+        }
+
+        .carousel::after {
+            z-index: 25;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+        }
+
+        .imgcarousel {
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .bulletcarousel {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .donate__button {
+            margin-bottom: 0.75rem;
+            color: #f8d336 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #195a9f;
+            padding: 20px;
+            border-radius: 50px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+        }
+
+        .donate__button:hover {
+            text-shadow: 0px 0px 6px #f8d336;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            transition: all 0.4s ease 0s;
+        }
+
+        .donate__link {
+            color: #f8d336 !important;
+        }
+
+        .donate__tip {
+            display: block;
+
+            width: 100%;
+            font-size: 75%;
+        }
+
+        .donate__container {
+            text-align: center;
+            width: 100%;
+        }
+
+        @media all and (max-width: 600px) {
+            .flags {
+                --ggs: 2;
+            }
+
+            .logo {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lang"><a href="index_ua.html">Yкраїнська</a> <a href="index.html">Français</a></div>
+    <div class="box">
+        <div class="row">
+
+            <div class="start" itemscope itemtype="http://data-vocabulary.org/Person">
+                <h1>
+                    <span itemprop="name">Avenir Franco-Ukrainien</span>
+                </h1>
+                <div itemprop="title">Association de soutiens aux peuples Ukrainiens</div>
+                <div><img class="logo" src="logo.png" /></div>
+            </div>
+
+
+            <div class="flags" style="text-align:center;">
+                <a href="https://www.facebook.com/profile.php?id=100082126084029">
+                    <div class="gg-facebook"></div>
+                </a>&nbsp;
+                <a href="https://www.instagram.com/asso_avenirfrancoukrainien/">
+                    <div class="gg-instagram"></div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            Notre association continue à apporter de l’aide en Ukraine grâce à des dons depuis le début du conflit et
+            c’est pour cela que nous avons besoin de vous pour soutenir les peuples Ukrainiens dans ces moments
+            difficiles
+            Association de loi de 1901, créé le 22 mars 2022, nous avons pour objet de rassembler toutes personnes
+            physiques ou morales qui souhaitent promouvoir une meilleure connaissance de l’Ukraine en France et de
+            renforcer des liens d’entraide et d’aide humanitaires
+            <br />
+            <br />
+            Avec nos bénévoles, nous nous déplaçons jusqu’en Ukraine pour ramener des convois humanitaires et les
+            transmettre vers destinations sûres et vérifiées telles que :
+
+            <li>Des hôpitaux, </li>
+            <li>Les fonds humanitaires de Kiev et Vinnitca (qui se déplacent dans le pays pour la distribution aux
+                besoins de chaque ville et de chaque village libéré) </li>
+            <li>Les maisons d’orphelinats (par exemple les orphelins de Lissichansk ont déménagées à 30 km d’Odessa à
+                cause des bombardements)</li>
+            <li>Sur le front (les soldats de Bahmut ont reçu des couvertures chaudes et un peu de café)</li>
+            <br />
+            Nous avons envoyé plus de 70 tonnes d’aide humanitaire en Ukraine, nous avons aidé à l’arrivée d’une
+            quarantaine de réfugiés dans la métropole Nantaise, et mené des opérations de collecte, d’accueil et de
+            soutien aux réfugiés.
+        </div>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="bulletcarousel carousel__ol__li carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_4.jpg" />
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                        <a href="#carousel__slide7" class="carousel__prev">Go to last slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_2.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_3.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide4" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_1.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide5" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide5" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_5.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide6" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide6" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_7.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide7" class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide7" tabindex="0" class="carousel__slide bulletcarousel">
+                    <img class="imgcarousel" src="content/IMG_6.jpg" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+                </li>
+            </ol>
+
+        </section>
+        <h2>Nos missions</h2>
+        <div class="row">
+            Apporter une assistance matérielle, sanitaire, morale et médicale aux Ukrainiens, promouvoir des liens
+            culturels entre les deux pays, participer à l’intégration des Ukrainiens arrivant en France et contribuer à
+            des projets de développement et de reconstruction en Ukraine.
+        </div>
+        <div class="row">
+            Les retours positifs et tous les remerciements nous encourage encore et encore à aider les Ukrainiens au
+            plus près de leurs besoins
+        </div>
+        <div class="row">
+            Parlez de nous autour de vous ! Pour nous soutenir adhérez à notre association, devenez bénévole, devenez
+            sponsors, mettez nous en contact ou plus simplement faites un don qui sera déductible fiscalement.
+        </div>
+        <h2>Nous collectons</h2>
+        <div class="row">
+            <li> Médicaments, antiseptiques, antidouleurs, anti-inflammatoires, bandages, compresses, pansements et
+                vitamines </li>
+            <li>Générateurs diesel</li>
+            <li>Sacs de couchage, tapis de sol</li>
+            <li>Lampes de poche, bougies</li>
+            <li>Couvertures et oreillers, plaides chauds</li>
+            <li>Serviettes, draps</li>
+            <li>Nourriture (pâtes, compotes, gâteaux, conserves, riz etc... Tout ce qui peut voyager !)</li>
+            <li>Produits d'hygiène, couches adultes et enfants, lingettes, alaises adultes jetables</li>
+            <li>Slips, chaussettes, t-shirts, pantalons style jogging pour homme</li>
+            <li>Lait (en poudre)</li>
+            <li>Gants</li>
+            <li>Bonnets</li>
+            <li>Pantalons de sport pour hommes, femmes et enfants (plus facile à mettre pour les blessés)</li>
+            <li>Bouillotes, thermo</li>
+            <br />
+            <div class="donate__container">
+                <div class="donate__button">
+                    <a class="donate__link" href="https://www.helloasso.com/associations/avenir-franco-ukrainien">➡️
+                        Aidez financièrement 🔗</a>
+                </div>
+                <br />
+                <span class="donate__tip">Collecte via HelloAsso, attestation de don pour défiscalisation fournie sur
+                    demande.</span>
+            </div>
+        </div>
+        <h2>Contact et demande d'information</h2>
+        <div class="bottomer">
+            <span class="centered" style="display: flex;"><a style="margin-right: 5px;"
+                    href="mailto:avenirfrukr@gmail.com">avenirfrukr@gmail.com</a><i class="gg-mail">&nbsp;</i></span>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
