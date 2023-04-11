@@ -12,6 +12,10 @@
     <meta name="author" content="Association Avenir France Ukraine">
     <title>Association Avenir Franco-Ukrainien</title>
     <style>
+        * {
+            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        }
+
         body {
             background: white;
             color: #195a9f;
@@ -545,23 +549,35 @@
                 width: 80%;
             }
         }
+
         .partners {
             display: flex;
             max-width: 100%;
             justify-content: space-around;
             align-content: center;
             flex-wrap: wrap;
-            
+            justify-content: center;
         }
-      
+
+
+
         .partners-logo {
             width: 350px;
             padding: 15px;
         }
-          /* Customize container */
-          @media (max-width: 600px) {
+
+        .partners-small-logo {
+            width: 200px;
+        }
+
+        /* Customize container */
+        @media (max-width: 600px) {
             .partners {
                 flex-direction: column;
+            }
+
+            .partners-small-logo {
+                margin-left: 65px;
             }
         }
     </style>
@@ -732,10 +748,18 @@
         <div class="row">
             <div class="partners">
                 <div><a href="https://www.medbat.org.ua/en/"><img class="partners-logo" src="partner-1.jpg" /></a></div>
-                <div><a href="https://www.uaprail.com.ua/?lang=en"><img class="partners-logo" src="partner-2.jpg" /></a></div>
+                <div><a href="https://www.uaprail.com.ua/?lang=en"><img class="partners-logo" src="partner-2.jpg" /></a>
+                </div>
+                <div><a href="https://malyatko.vn.ua/posts/reabil-centre"><img class="partners-logo partners-small-logo"
+                            src="partner-3.png" /></a></div>
             </div>
-            <a href="https://www.medbat.org.ua/en/">Pirogov First Volunteer Mobile Hospital</a> & <a href="https://www.uaprail.com.ua/?lang=en"></a>Volunteer UAP Center</a> sont nos contacts principaux (mais non exclusifs) sur place. Grace à eux, nous nous assurons que l'aide apportées soutiendra ceux qui en ont le plus besoin.
+            <a href="https://www.medbat.org.ua/en/">Pirogov First Volunteer Mobile Hospital</a>, <a
+                href="https://www.uaprail.com.ua/?lang=en"></a>Volunteer UAP Center</a> et <a
+                href="https://malyatko.vn.ua/posts/reabil-centre"></a>l'orphelinat , centre de rééducation «Malyatko» à
+            Vinnitsa (UA)</a> sont nos contacts principaux (mais non exclusifs) sur place. Grace à eux, nous nous
+            assurons que l'aide apportées soutiendra ceux qui en ont le plus besoin.
         </div>
+
         <h2>Nous collectons</h2>
         <div class="row">
             En nature et par ordre de priorité:
@@ -748,7 +772,7 @@
             <li>Antiseptiques</li>
             <li>Sérum physiologique</li>
             <li>Trousse de premier secours</li>
-            <li>Tourniquets</li>
+            <li>Garrot tourniquet</li>
             <li>Equipement médical ( scanner portatif médical, appareil échographie, thermomètre frontal)</li>
             <li>Pâtes instantanées ( genre pâtes chinoises en sachet )</li>
             <li>Purée, soupe lyophilisées ( genre Knorr )</li>
@@ -767,7 +791,7 @@
         <h2>Nous finançons</h2>
         <div class="row">
             <li>Scanners portatifs</li>
-            <li>Anbulances</li>
+            <li>Ambulances</li>
             <br />
             <div class="donate__container">
                 <div class="donate__button">
@@ -781,8 +805,10 @@
         </div>
         <h2>La presse parle de nous</h2>
         <div class="row">
-            <li>Ouest France (<a href="presse/of_1.pdf">article 1</a>) (<a href="presse/of_2.pdf">article 2) (<a href="presse/of_3.jpg">article 3</a>)</li>
-            <li>Presse Ocean (<a href="presse/po_1.jpg">article 1</a>) (<a href="presse/po_2.jpg">article 2</a>) (<a href="presse/po_3.jpg">article 3</a>)</li>
+            <li>Ouest France (<a href="presse/of_1.pdf">article 1</a>) (<a href="presse/of_2.pdf">article 2) (<a
+                        href="presse/of_3.jpg">article 3</a>)</li>
+            <li>Presse Ocean (<a href="presse/po_1.jpg">article 1</a>) (<a href="presse/po_2.jpg">article 2</a>) (<a
+                    href="presse/po_3.jpg">article 3</a>)</li>
             <li>Gazette de Vertou (<a href="presse/vertou.jpg_1">article 1</a>)</li>
             <br />
         </div>
